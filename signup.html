@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | 21 Day Habit Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="auth-body">
+  <div class="page-shell">
+    <nav class="topbar" aria-label="Site navigation">
+      <a class="brand-link" href="index.html">HabitBloom</a>
+      <div class="topbar-actions">
+        <a class="text-link signup-login-link" href="login.html">Log in</a>
+      </div>
+    </nav>
+
+    <main class="auth-layout">
+      <section class="hero-copy auth-copy">
+        <p class="eyebrow signup-kicker">Start fresh</p>
+        <h1 class="signup-hero-title">Create your account and begin your next 21-day streak.</h1>
+        <p class="hero-text">
+          This demo stores your sign-up details locally in your browser so you can use the tracker right away.
+        </p>
+      </section>
+
+      <section class="auth-card signup-form-card" aria-labelledby="signup-title">
+        <div class="section-heading auth-heading">
+          <div>
+            <p class="eyebrow signup-kicker">New account</p>
+            <h2 id="signup-title">Sign up</h2>
+          </div>
+        </div>
+
+        <form id="signupForm" class="auth-form">
+          <label class="field-label" for="signupName">Full name</label>
+          <input id="signupName" class="habit-input" name="name" type="text" autocomplete="name" required>
+
+          <label class="field-label" for="signupEmail">Email</label>
+          <input id="signupEmail" class="habit-input" name="email" type="email" autocomplete="email" required>
+
+          <label class="field-label" for="signupPassword">Password</label>
+          <input id="signupPassword" class="habit-input" name="password" type="password" minlength="6" autocomplete="new-password" required>
+
+          <p id="signupFeedback" class="form-feedback" aria-live="polite"></p>
+
+          <button class="button button-primary auth-submit" type="submit">Create account</button>
+        </form>
+
+        <p class="auth-switch">
+          Already signed up?
+          <a class="text-link signup-login-link" href="login.html">Log in here</a>
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>
